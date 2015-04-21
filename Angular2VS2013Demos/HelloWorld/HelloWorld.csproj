@@ -193,6 +193,7 @@
     <Content Include="Scripts\angular2\src\test_lib\test_lib.js" />
     <Content Include="Scripts\angular2\src\test_lib\utils.js" />
     <Content Include="Scripts\angular2\test_lib.js" />
+    <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\dist\es6-shim.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -332,7 +333,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Scripts\app\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
