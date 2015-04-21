@@ -1,11 +1,24 @@
-﻿<!DOCTYPE html>
-
+<!-- index.html -->
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <title>Angular 2 Quickstart</title>
+    <script src="/scripts/dist/es6-shim.js"></script>
 </head>
 <body>
-    Welcome
+    <!-- The app component created in app.es6 -->
+    <my-app></my-app>
+
+    <script>
+  // Rewrite the paths to load the files
+  System.paths = {
+    'angular2/*':'/scripts/angular2/*.js', // Angular
+    'app': 'app.js' // The my-app component
+  };
+
+  // Kick off the application
+  System.import('app');
+</script>
+
 </body>
 </html>
+
