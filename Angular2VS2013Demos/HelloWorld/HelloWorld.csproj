@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F55868F6-5419-4535-88C3-929EF6F1D0CF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelloWorld</RootNamespace>
+    <AssemblyName>HelloWorld</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\angular2\angular2.js" />
+    <Content Include="Scripts\angular2\annotations.js" />
+    <Content Include="Scripts\angular2\change_detection.js" />
+    <Content Include="Scripts\angular2\core.js" />
+    <Content Include="Scripts\angular2\di.js" />
+    <Content Include="Scripts\angular2\directives.js" />
+    <Content Include="Scripts\angular2\forms.js" />
+    <Content Include="Scripts\angular2\src\change_detection\abstract_change_detector.js" />
+    <Content Include="Scripts\angular2\src\change_detection\change_detection_jit_generator.js" />
+    <Content Include="Scripts\angular2\src\change_detection\change_detection_util.js" />
+    <Content Include="Scripts\angular2\src\change_detection\coalesce.js" />
+    <Content Include="Scripts\angular2\src\change_detection\dynamic_change_detector.js" />
+    <Content Include="Scripts\angular2\src\change_detection\exceptions.js" />
+    <Content Include="Scripts\angular2\src\change_detection\interfaces.js" />
+    <Content Include="Scripts\angular2\src\change_detection\parser\ast.js" />
+    <Content Include="Scripts\angular2\src\change_detection\parser\lexer.js" />
+    <Content Include="Scripts\angular2\src\change_detection\parser\locals.js" />
+    <Content Include="Scripts\angular2\src\change_detection\parser\parser.js" />
+    <Content Include="Scripts\angular2\src\change_detection\pipes\iterable_changes.js" />
+    <Content Include="Scripts\angular2\src\change_detection\pipes\keyvalue_changes.js" />
+    <Content Include="Scripts\angular2\src\change_detection\pipes\null_pipe.js" />
+    <Content Include="Scripts\angular2\src\change_detection\pipes\pipe.js" />
+    <Content Include="Scripts\angular2\src\change_detection\pipes\pipe_registry.js" />
+    <Content Include="Scripts\angular2\src\change_detection\proto_change_detector.js" />
+    <Content Include="Scripts\angular2\src\change_detection\proto_record.js" />
+    <Content Include="Scripts\angular2\src\core\annotations\annotations.js" />
+    <Content Include="Scripts\angular2\src\core\annotations\di.js" />
+    <Content Include="Scripts\angular2\src\core\annotations\template.js" />
+    <Content Include="Scripts\angular2\src\core\annotations\visibility.js" />
+    <Content Include="Scripts\angular2\src\core\application.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\binding_propagation_config.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\compiler.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\component_url_mapper.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\css_processor.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\directive_metadata.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\directive_metadata_reader.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\element_binder.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\element_injector.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\interfaces.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\compile_control.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\compile_element.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\compile_pipeline.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\compile_step.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\default_steps.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\directive_parser.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\element_binder_builder.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\element_binding_marker.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\property_binding_parser.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\proto_element_injector_builder.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\proto_view_builder.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\text_interpolation_parser.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\util.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\view_splitter.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\private_component_loader.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\private_component_location.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\selector.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\shadow_dom_emulation\content_tag.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\shadow_dom_emulation\light_dom.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\shadow_dom_emulation\shadow_css.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\shadow_dom_strategy.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\style_inliner.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\style_url_resolver.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\template_loader.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\template_resolver.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\url_resolver.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\view.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\view_container.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\view_pool.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\xhr\xhr.js" />
+    <Content Include="Scripts\angular2\src\core\compiler\xhr\xhr_impl.js" />
+    <Content Include="Scripts\angular2\src\core\dom\element.js" />
+    <Content Include="Scripts\angular2\src\core\events\event_manager.js" />
+    <Content Include="Scripts\angular2\src\core\events\hammer_common.js" />
+    <Content Include="Scripts\angular2\src\core\events\hammer_gestures.js" />
+    <Content Include="Scripts\angular2\src\core\exception_handler.js" />
+    <Content Include="Scripts\angular2\src\core\life_cycle\life_cycle.js" />
+    <Content Include="Scripts\angular2\src\core\zone\vm_turn_zone.js" />
+    <Content Include="Scripts\angular2\src\directives\for.js" />
+    <Content Include="Scripts\angular2\src\directives\if.js" />
+    <Content Include="Scripts\angular2\src\directives\non_bindable.js" />
+    <Content Include="Scripts\angular2\src\directives\switch.js" />
+    <Content Include="Scripts\angular2\src\di\annotations.js" />
+    <Content Include="Scripts\angular2\src\di\binding.js" />
+    <Content Include="Scripts\angular2\src\di\exceptions.js" />
+    <Content Include="Scripts\angular2\src\di\injector.js" />
+    <Content Include="Scripts\angular2\src\di\key.js" />
+    <Content Include="Scripts\angular2\src\di\opaque_token.js" />
+    <Content Include="Scripts\angular2\src\dom\browser_adapter.js" />
+    <Content Include="Scripts\angular2\src\dom\dom_adapter.js" />
+    <Content Include="Scripts\angular2\src\dom\generic_browser_adapter.js" />
+    <Content Include="Scripts\angular2\src\facade\async.js" />
+    <Content Include="Scripts\angular2\src\facade\browser.js" />
+    <Content Include="Scripts\angular2\src\facade\collection.js" />
+    <Content Include="Scripts\angular2\src\facade\lang.js" />
+    <Content Include="Scripts\angular2\src\facade\math.js" />
+    <Content Include="Scripts\angular2\src\forms\directives.js" />
+    <Content Include="Scripts\angular2\src\forms\form_builder.js" />
+    <Content Include="Scripts\angular2\src\forms\model.js" />
+    <Content Include="Scripts\angular2\src\forms\validators.js" />
+    <Content Include="Scripts\angular2\src\forms\validator_directives.js" />
+    <Content Include="Scripts\angular2\src\mock\template_resolver_mock.js" />
+    <Content Include="Scripts\angular2\src\mock\xhr_mock.js" />
+    <Content Include="Scripts\angular2\src\reflection\reflection.js" />
+    <Content Include="Scripts\angular2\src\reflection\reflection_capabilities.js" />
+    <Content Include="Scripts\angular2\src\reflection\reflector.js" />
+    <Content Include="Scripts\angular2\src\reflection\types.js" />
+    <Content Include="Scripts\angular2\src\services\title.js" />
+    <Content Include="Scripts\angular2\src\test_lib\benchmark_util.js" />
+    <Content Include="Scripts\angular2\src\test_lib\e2e_util.js" />
+    <Content Include="Scripts\angular2\src\test_lib\perf_util.js" />
+    <Content Include="Scripts\angular2\src\test_lib\test_injector.js" />
+    <Content Include="Scripts\angular2\src\test_lib\test_lib.js" />
+    <Content Include="Scripts\angular2\src\test_lib\utils.js" />
+    <Content Include="Scripts\angular2\test_lib.js" />
+    <Content Include="Scripts\dist\es6-shim.js" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\angular2\angular2.js.map" />
+    <Content Include="Scripts\angular2\annotations.js.map" />
+    <Content Include="Scripts\angular2\change_detection.js.map" />
+    <Content Include="Scripts\angular2\core.js.map" />
+    <Content Include="Scripts\angular2\di.js.map" />
+    <Content Include="Scripts\angular2\directives.js.map" />
+    <Content Include="Scripts\angular2\forms.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\abstract_change_detector.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\change_detection_jit_generator.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\change_detection_util.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\coalesce.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\dynamic_change_detector.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\exceptions.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\interfaces.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\parser\ast.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\parser\lexer.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\parser\locals.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\parser\parser.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\pipes\iterable_changes.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\pipes\keyvalue_changes.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\pipes\null_pipe.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\pipes\pipe.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\pipes\pipe_registry.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\proto_change_detector.js.map" />
+    <Content Include="Scripts\angular2\src\change_detection\proto_record.js.map" />
+    <Content Include="Scripts\angular2\src\core\annotations\annotations.js.map" />
+    <Content Include="Scripts\angular2\src\core\annotations\di.js.map" />
+    <Content Include="Scripts\angular2\src\core\annotations\template.js.map" />
+    <Content Include="Scripts\angular2\src\core\annotations\visibility.js.map" />
+    <Content Include="Scripts\angular2\src\core\application.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\binding_propagation_config.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\compiler.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\component_url_mapper.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\css_processor.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\directive_metadata.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\directive_metadata_reader.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\element_binder.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\element_injector.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\interfaces.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\compile_control.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\compile_element.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\compile_pipeline.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\compile_step.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\default_steps.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\directive_parser.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\element_binder_builder.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\element_binding_marker.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\property_binding_parser.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\proto_element_injector_builder.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\proto_view_builder.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\text_interpolation_parser.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\util.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\pipeline\view_splitter.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\private_component_loader.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\private_component_location.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\selector.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\shadow_dom_emulation\content_tag.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\shadow_dom_emulation\light_dom.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\shadow_dom_emulation\shadow_css.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\shadow_dom_strategy.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\style_inliner.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\style_url_resolver.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\template_loader.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\template_resolver.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\url_resolver.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\view.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\view_container.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\view_pool.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\xhr\xhr.js.map" />
+    <Content Include="Scripts\angular2\src\core\compiler\xhr\xhr_impl.js.map" />
+    <Content Include="Scripts\angular2\src\core\dom\element.js.map" />
+    <Content Include="Scripts\angular2\src\core\events\event_manager.js.map" />
+    <Content Include="Scripts\angular2\src\core\events\hammer_common.js.map" />
+    <Content Include="Scripts\angular2\src\core\events\hammer_gestures.js.map" />
+    <Content Include="Scripts\angular2\src\core\exception_handler.js.map" />
+    <Content Include="Scripts\angular2\src\core\life_cycle\life_cycle.js.map" />
+    <Content Include="Scripts\angular2\src\core\zone\vm_turn_zone.js.map" />
+    <Content Include="Scripts\angular2\src\directives\for.js.map" />
+    <Content Include="Scripts\angular2\src\directives\if.js.map" />
+    <Content Include="Scripts\angular2\src\directives\non_bindable.js.map" />
+    <Content Include="Scripts\angular2\src\directives\switch.js.map" />
+    <Content Include="Scripts\angular2\src\di\annotations.js.map" />
+    <Content Include="Scripts\angular2\src\di\binding.js.map" />
+    <Content Include="Scripts\angular2\src\di\exceptions.js.map" />
+    <Content Include="Scripts\angular2\src\di\injector.js.map" />
+    <Content Include="Scripts\angular2\src\di\key.js.map" />
+    <Content Include="Scripts\angular2\src\di\opaque_token.js.map" />
+    <Content Include="Scripts\angular2\src\dom\browser_adapter.js.map" />
+    <Content Include="Scripts\angular2\src\dom\dom_adapter.js.map" />
+    <Content Include="Scripts\angular2\src\dom\generic_browser_adapter.js.map" />
+    <Content Include="Scripts\angular2\src\facade\async.js.map" />
+    <Content Include="Scripts\angular2\src\facade\browser.js.map" />
+    <Content Include="Scripts\angular2\src\facade\collection.js.map" />
+    <Content Include="Scripts\angular2\src\facade\lang.js.map" />
+    <Content Include="Scripts\angular2\src\facade\math.js.map" />
+    <Content Include="Scripts\angular2\src\forms\directives.js.map" />
+    <Content Include="Scripts\angular2\src\forms\form_builder.js.map" />
+    <Content Include="Scripts\angular2\src\forms\model.js.map" />
+    <Content Include="Scripts\angular2\src\forms\validators.js.map" />
+    <Content Include="Scripts\angular2\src\forms\validator_directives.js.map" />
+    <Content Include="Scripts\angular2\src\mock\template_resolver_mock.js.map" />
+    <Content Include="Scripts\angular2\src\mock\xhr_mock.js.map" />
+    <Content Include="Scripts\angular2\src\reflection\reflection.js.map" />
+    <Content Include="Scripts\angular2\src\reflection\reflection_capabilities.js.map" />
+    <Content Include="Scripts\angular2\src\reflection\reflector.js.map" />
+    <Content Include="Scripts\angular2\src\reflection\types.js.map" />
+    <Content Include="Scripts\angular2\src\services\title.js.map" />
+    <Content Include="Scripts\angular2\src\test_lib\benchmark_util.js.map" />
+    <Content Include="Scripts\angular2\src\test_lib\e2e_util.js.map" />
+    <Content Include="Scripts\angular2\src\test_lib\perf_util.js.map" />
+    <Content Include="Scripts\angular2\src\test_lib\test_injector.js.map" />
+    <Content Include="Scripts\angular2\src\test_lib\test_lib.js.map" />
+    <Content Include="Scripts\angular2\src\test_lib\utils.js.map" />
+    <Content Include="Scripts\angular2\test_lib.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Scripts\app\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20895</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20895/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
