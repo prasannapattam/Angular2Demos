@@ -1,16 +1,16 @@
-import {Component, Template, bootstrap} from 'angular2/angular2';
+import {Component, View, bootstrap} from 'angular2/angular2';
 // Annotation section
 @Component({
   selector: 'my-app'
 })
-@Template({
-  inline: '<h1>Hello {{ name }}</h1>'
+@View({
+  template: `<h1>Hello {{ name }}</h1>`
 })
 // Component controller
-class MyAppComponent {
+class App {
   constructor() {
       this.name = 'World';
   }
 }
 
-bootstrap(MyAppComponent);
+bootstrap(App);
